@@ -1,0 +1,23 @@
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+.navbar{
+position: absolute;
+max-width: 318;
+background-color:#800000;    
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+}
+ul {
+    list-style-type: none;
+}
