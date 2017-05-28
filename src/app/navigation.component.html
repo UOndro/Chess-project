@@ -1,9 +1,4 @@
-<div class="navbar">
-    <nav>
-        <ul>
-            <li><a routerLink="/home">HOME</a>
-            <li><a routerLink="/home">Start Game</a>
-            <li><a routerLink="/home">Profil</a>
-        </ul>
-    </nav>
-</div>
+<header class="navhead">
+    <div class="navheadrow"></div>
+        <a *ngFor="let item of menuItems" [routerLink]="item.link" class="nav-link" routerLinkActive="router-link-active">{{item.caption}}</a>
+</header>

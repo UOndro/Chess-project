@@ -1,0 +1,24 @@
+.board{
+    display:inline-block;
+    width:16cm;
+    height: 16cm;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    border: 8px solid black;
+}
+.black{
+ background: #663300;
+ height: 2cm;
+ width: 2cm;
+ position:absolute;
+}
+.white{
+ background: #cc9900;
+ height: 2cm;
+ width: 2cm;
+ position:absolute;
+}
