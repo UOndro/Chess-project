@@ -22,3 +22,10 @@
  width: 2cm;
  position:absolute;
 }
+
+.selected{
+    height: 2cm;
+ width: 2cm;
+    border: -3px solid black;
+     position:absolute;
+}

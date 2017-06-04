@@ -1,5 +1,9 @@
 <div class="board" >
-<div *ngFor="let field of board" [class]="field.styl" [style.top.%]="field.t" [style.right.%]="field.r">
-    <img *ngIf="field.obj" [src]="field.obj.url">
+<div *ngFor="let field of board; let i = index" [class]="field.styl" [style.top.%]="field.t" [style.right.%]="field.r" (click)="select(field)">
+
+<img *ngIf="field.ob" [src]="field.ob.imagePath">
+
 </div>
+
+    
 </div>
