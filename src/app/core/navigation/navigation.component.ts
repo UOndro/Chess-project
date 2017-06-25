@@ -1,10 +1,8 @@
-import { Component,OnInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 
 class MenuItem {
   constructor(public caption: string, public link: any[]) { }
 }
-
 
 @Component({
   selector: 'navigation',
@@ -13,7 +11,7 @@ class MenuItem {
 })
 export class NavigationComponent implements OnInit {
   menuItems: MenuItem[];
-ngOnInit() {
+  ngOnInit() {
     this.menuItems = [
       { caption: 'Home', link: ['/home'] },
       { caption: 'Profil', link: ['/profil'] },

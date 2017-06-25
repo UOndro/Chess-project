@@ -1,9 +1,14 @@
-<div class="board" >
-<div *ngFor="let field of board; let i = index" [class]="field.styl" [style.top.%]="field.t" [style.right.%]="field.r" (click)="select(field)">
-
-<img *ngIf="field.ob" [src]="field.ob.imagePath">
-
+<div class="board">
+    <div *ngFor="let field of board; let i = index" [class]="field.style" [style.top.%]="field.top" [style.right.%]="field.right"
+        (click)="move(field)" [ngClass]="{'select' : field==selectedField}">
+        <img *ngIf="field.chessPiece" [src]="field.chessPiece.imagePath">
+    </div>
 </div>
-
-    
+<div class="player">
+    <div *ngIf="player=='white'; else elseBlock">
+        <img src='/assets/images/wQ.png'>
+    </div>
+    <ng-template #elseBlock>
+        <img src='/assets/images/bQ.png'>
+    </ng-template>
 </div>
